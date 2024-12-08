@@ -58,7 +58,7 @@ class PPO_agent():
 		# Choose distribution for the actor
 		self.actor = Actor(self.state_dim, self.action_dim, self.net_width).to(device)
 		# Load the pre-trained model weights for the Actor network
-		self.actor.load_state_dict(torch.load("actor-469.pt")) # like "Pendulum-123.pt"
+		self.actor.load_state_dict(torch.load("your model name")) # like "Pendulum-123.pt"
 
 		# Switch the Actor network to evaluation mode (disables dropout, etc.)
 		self.actor.eval()
