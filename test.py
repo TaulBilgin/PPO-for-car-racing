@@ -11,7 +11,7 @@ from ultralytics import YOLO
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = YOLO("C:\\code\\NLP\\Model\\best.pt").to(device)
+model = YOLO("your yolo OD path").to(device)
 print(device)
 
 class Actor(nn.Module):
