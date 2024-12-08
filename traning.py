@@ -338,7 +338,6 @@ def save_model(agent, best_reward):
 				now_speed = next_speed
 			print(f"Test total reward: {run_reward}")
 	env_test.close()
-	input()
 	if run_reward > best_reward:
 		torch.save(agent.actor.state_dict(), f"actor-{int(run_reward)}.pt")
 		return int(run_reward)
